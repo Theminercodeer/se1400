@@ -48,7 +48,7 @@ table {
 }
 
 
-
+/* index.html */
 /* Navigation Bar */
 .navbar {
     display: flex;
@@ -130,4 +130,97 @@ table {
     padding: 0 0.7rem 0;
     background-color: yellow;
     color: black;
+}
+
+/* list.html */
+/* Game list wrapper */
+.game-list-wrapper {
+    display: grid;
+    margin: auto 0;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(auto-fit, minmax(0, 150px));
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(0, 0, 179);
+    padding: 2rem;
+    border-bottom: solid yellow 3px;
+    border-left: solid yellow 3px;
+    border-right: solid yellow 3px;
+}
+
+.game-list-searchbar {
+    margin-top: 5rem;
+    grid-column: 2 / -2;
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 179);
+    border-bottom: solid yellow 2px;
+}
+
+@media (max-width: 400px) {
+    .game-list-wrapper {
+        display: grid;
+        margin: auto 0;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(1, minmax(0, 400px));
+        justify-content: center;
+        gap: 2rem;
+        background-color: rgb(0, 0, 179);
+        border-bottom: solid yellow 3px;
+        border-left: solid yellow 3px;
+        border-right: solid yellow 3px;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: rgb(0, 0, 78);
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .game-list-wrapper {
+        display: grid;
+        margin: auto 0;
+        grid-column: 2 / -2;
+        grid-template-columns: repeat(auto-fit, minmax(0, 100px));
+        justify-content: center;
+        align-self: center;
+        gap: 2rem;
+        background-color: rgb(0, 0, 179);
+        padding: 1rem;
+        border-bottom: solid yellow 3px;
+        border-left: solid yellow 3px;
+        border-right: solid yellow 3px;
+    }
+
+    .game-list-searchbar {
+        margin-top: 5rem;
+        grid-column: 2 / -2;
+        display: flex;
+        align-content: center;
+        padding: 1rem;
+        background-color: rgb(0, 0, 179);
+        border-bottom: solid yellow 2px;
+    }
+}
+
+.game-list-wrapper .game-wrapper:hover {
+    transform: translateY(3px);      
+}
+
+.game-wrapper {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: solid yellow 1px;
+}
+
+.game-wrapper p {
+    padding-top: 10px;
+    text-decoration: none;
+    color: yellow;
 }
