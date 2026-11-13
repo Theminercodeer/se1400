@@ -48,6 +48,14 @@ table {
 }
 
 
+/*Html*/
+html {
+    scrollbar-width: thin;
+    scrollbar-color: darkblue lightblue;
+}
+
+
+
 /* index.html */
 /* Navigation Bar */
 .navbar {
