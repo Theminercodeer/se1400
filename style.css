@@ -113,6 +113,7 @@ table {
    display: flex;
    flex: auto;
    overflow: hidden;
+   text-decoration: none;
 }
 
 .hero-searchbar p {
@@ -121,10 +122,13 @@ table {
     padding: 0 0.5rem 0.5rem;
     font-style: italic;
     width: 100%;
+    text-decoration-line: none;
+    color: black;
 }
 
 .hero-searchbar svg {
     height:inherit;
     padding: 0 0.7rem 0;
     background-color: yellow;
+    color: black;
 }
