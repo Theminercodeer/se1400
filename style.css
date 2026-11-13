@@ -106,7 +106,6 @@ table {
 
 
 .hero-searchbar {
-   background-color: white;
    border-radius: 1rem;
    max-width: 40%;
    margin: 2rem auto;
@@ -116,15 +115,15 @@ table {
    text-decoration: none;
 }
 
-.hero-searchbar p {
-    text-align: start;
-    font-size: 2rem;
-    padding: 0 0.5rem 0.5rem;
-    font-style: italic;
+.hero-searchbar input {
     width: 100%;
-    text-decoration-line: none;
-    color: black;
+    border-style: none;
 }
+
+.hero-searchbar input:hover {
+    cursor: pointer;
+}
+
 
 .hero-searchbar svg {
     height:inherit;
