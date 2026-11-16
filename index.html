@@ -4,12 +4,18 @@
         <meta charset="uft-8">
         <meta name="viewport" content="width=device-width">
         <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="navbar">
-            <a href="./index.html"><img src="images/icons/home.svg" alt="home-icon"></a>
-            <a href="list.html" class="navbar-content">List</a>
+            <a href="./index.html" class="home-button"><img src="images/icons/home.svg" alt="home-icon"></a>
+            <div class="navbar-content-wrapper">
+                <a href="list.html" class="navbar-content">List</a>
+                <a href="#" class="navbar-content">info</a>
+            </div>
         </div>
 
         <div class="container-wrapper">
@@ -26,6 +32,48 @@
                     </svg>   
                 </a>
             </div>
+
+
+            <div class="home-info-wrapper">
+                <section class="about-section">
+                    <h2>About</h2>
+                    <hr>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. It is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and</p>
+                </section>
+                <section>
+                    <h2>Goal</h2>
+                    <hr>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. It is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and</p>
+
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="footer-wrapper">
+                    <h4>Contact</h4>
+                    <hr>
+                    <a href="emailto:minecraft283mods@gmail.com">minecraft283mods@gmail.com</a>
+                </div>
+                <div class="footer-wrapper">
+                    <h4>About</h4>
+                    <hr>
+                    <a href="emailto:minecraft283mods@gmail.com">minecraft283mods@gmail.com</a>
+                </div>
+                <div class="footer-wrapper">
+                    <h4>Contact</h4>
+                    <hr>
+                    <a href="emailto:minecraft283mods@gmail.com">minecraft283mods@gmail.com</a>
+                </div>
+                <div class="copyright-wrapper">
+                    <p>&copy; <span id="copyright-year">year</span> GTL</p>
+                </div>
+                
+
+            </div>
         </div>
+
+        <script>
+            document.getElementById("copyright-year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>

@@ -1,0 +1,24 @@
+.footer {
+    background-color: black;
+    display: grid;
+    grid-column: 1 / -1;
+    bottom: 0;
+    color: var(--light-gray);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.copyright-wrapper {
+    grid-column: 1 / -1;
+    text-align: center;
+    gap: 30px;
+    color: var(--light-gray);
+}
+
+.footer-wrapper a {
+    text-decoration-line: none;
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
