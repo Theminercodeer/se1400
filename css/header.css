@@ -1,0 +1,47 @@
+/* Navigation Bar */
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border:  1px solid var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.home-button>img {
+    width: 30px;
+    padding: 10px;
+    
+}
+
+.home-button {
+    justify-content: left;
+    margin-right: auto;
+}
+
+.navbar-content-wrapper {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar-content {
+    margin: 0;
+    padding: 1rem;
+    color: yellow;
+    text-decoration-line: none;
+    font-size: 1.2rem;
+    font-width: 2rem;
+    justify-content: center;
+    margin: 0 0 0.2rem;
+}
+
+
+.navbar-content:hover {
+    border-bottom: 1px solid yellow;
+}
